@@ -1,0 +1,176 @@
+{
+  "bot_name": "Trelix",
+  "company": {
+    "name": "ArteShow Estruturas em Alumínio",
+    "website": "https://arteshowestruturas.com.br",
+    "instagram": "https://www.instagram.com/arteshowestrutura",
+    "whatsapp": "https://wa.me/5547997454054",
+    "whatsapp_number": "+55 47 99745-4054"
+  },
+  "rules": {
+    "can_answer": [
+      "peso",
+      "cubagem",
+      "dimensoes",
+      "tipos de estruturas",
+      "informacoes tecnicas",
+      "prazo medio de fabricacao (sem prometer)",
+      "formas de atendimento",
+      "orientacao de montagem",
+      "diferenca entre produtos"
+    ],
+    "cannot_answer": [
+      "preco",
+      "valor",
+      "desconto",
+      "frete exato",
+      "prazo exato de entrega",
+      "condicoes comerciais detalhadas"
+    ],
+    "redirect_to_whatsapp_when": [
+      "cliente pedir preco",
+      "cliente pedir frete",
+      "cliente pedir orçamento",
+      "cliente pedir proposta",
+      "cliente pedir contrato",
+      "cliente pedir negociação"
+    ]
+  },
+  "default_messages": {
+    "welcome": "Olá! Eu sou o Trelix 🤖⚙️, assistente da ArteShow Estruturas. Posso te ajudar com informações técnicas, peso, cubagem, montagem e direcionar para orçamento no WhatsApp.",
+    "ask_for_list": "Perfeito! Me envie a lista de itens e quantidades que eu calculo o peso e cubagem total da carga.",
+    "price_redirect": "Os valores podem variar conforme quantidade, promoções e condições comerciais. Para te passar o preço atualizado, vou te direcionar para um consultor no WhatsApp: https://wa.me/5547997454054",
+    "freight_redirect": "O frete depende da cidade/estado, cubagem, peso e rota. Se você me passar os itens e quantidades, eu calculo peso/cubagem e encaminho para orçamento no WhatsApp: https://wa.me/5547997454054",
+    "unknown": "Boa pergunta! 😊 Para eu te responder com precisão, você pode me passar mais detalhes ou chamar direto no WhatsApp? https://wa.me/5547997454054"
+  },
+  "faq": [
+    {
+      "id": "faq_001",
+      "category": "empresa",
+      "question_keywords": ["quem é", "empresa", "arteshow", "sobre vocês"],
+      "answer": "A ArteShow Estruturas em Alumínio trabalha com locação e fabricação de estruturas para eventos, palcos, camarins, box truss, escadas, pórticos e soluções completas em alumínio."
+    },
+    {
+      "id": "faq_002",
+      "category": "contato",
+      "question_keywords": ["contato", "telefone", "whatsapp", "falar com alguém", "atendimento"],
+      "answer": "Você pode falar diretamente com nosso time pelo WhatsApp: https://wa.me/5547997454054 ou visitar nosso site: https://arteshowestruturas.com.br"
+    },
+    {
+      "id": "faq_003",
+      "category": "instagram",
+      "question_keywords": ["instagram", "fotos", "portfolio", "trabalhos"],
+      "answer": "Claro! Veja nossos projetos e estruturas no Instagram oficial: https://www.instagram.com/arteshowestrutura"
+    },
+    {
+      "id": "faq_004",
+      "category": "orcamento",
+      "question_keywords": ["orçamento", "cotação", "valor", "preço", "proposta"],
+      "answer": "Posso te ajudar com dados técnicos (peso e cubagem), mas para valores atualizados e condições comerciais, o ideal é falar com um consultor no WhatsApp: https://wa.me/5547997454054"
+    },
+    {
+      "id": "faq_005",
+      "category": "frete",
+      "question_keywords": ["frete", "entrega", "transporte", "envio", "caminhão"],
+      "answer": "O frete depende da cidade, peso e cubagem total. Se você me informar sua lista de itens e quantidades, eu calculo o total e encaminho para orçamento: https://wa.me/5547997454054"
+    },
+    {
+      "id": "faq_006",
+      "category": "peso_cubagem",
+      "question_keywords": ["peso", "cubagem", "m3", "volume", "medidas"],
+      "answer": "Sim! Eu consigo informar peso e cubagem unitária e calcular o total. Me diga o código ou nome do item e a quantidade."
+    },
+    {
+      "id": "faq_007",
+      "category": "locacao",
+      "question_keywords": ["locação", "alugar", "aluguel", "evento"],
+      "answer": "Sim! Trabalhamos com locação de estruturas completas para eventos, incluindo palcos, camarins, pórticos e box truss. Para orçamento e disponibilidade, chame no WhatsApp: https://wa.me/5547997454054"
+    },
+    {
+      "id": "faq_008",
+      "category": "fabricacao",
+      "question_keywords": ["fabricação", "comprar", "produzir", "sob medida"],
+      "answer": "Sim! Também fabricamos estruturas em alumínio sob medida, conforme necessidade do evento ou projeto. Para orçamento, fale com um consultor: https://wa.me/5547997454054"
+    },
+    {
+      "id": "faq_009",
+      "category": "montagem",
+      "question_keywords": ["montagem", "como montar", "manual", "instalação"],
+      "answer": "A ArteShow oferece suporte técnico e orientação de montagem. Para projetos maiores, a equipe também pode realizar montagem completa. Para detalhes, chame no WhatsApp: https://wa.me/5547997454054"
+    },
+    {
+      "id": "faq_010",
+      "category": "tipos_estrutura",
+      "question_keywords": ["box truss", "treliça", "pórtico", "palco", "camarim", "estrutura"],
+      "answer": "Trabalhamos com box truss (P30, P50 e outros modelos), torres, pórticos, estruturas para iluminação, camarins modulares, escadas e soluções personalizadas."
+    }
+  ],
+  "conversation_flows": [
+    {
+      "id": "flow_orcamento",
+      "trigger_keywords": ["orçamento", "cotação", "valor", "preço", "proposta"],
+      "steps": [
+        {
+          "message": "Perfeito! Para orçamento preciso de algumas informações rápidas:"
+        },
+        {
+          "message": "📌 Qual cidade/estado será o evento ou entrega?"
+        },
+        {
+          "message": "📦 Quais itens você precisa e quantidades? (Ex: P30 torre 2m x 10 unidades)"
+        },
+        {
+          "message": "⚙️ Se quiser, posso calcular o peso e cubagem total para ajudar no transporte."
+        },
+        {
+          "message": "📲 Para receber o valor atualizado e condições comerciais, fale com um consultor no WhatsApp: https://wa.me/5547997454054"
+        }
+      ]
+    },
+    {
+      "id": "flow_frete",
+      "trigger_keywords": ["frete", "transporte", "entrega", "caminhão"],
+      "steps": [
+        {
+          "message": "Entendi! Para estimar transporte eu preciso:"
+        },
+        {
+          "message": "📍 Cidade/Estado de entrega"
+        },
+        {
+          "message": "📦 Lista de itens e quantidades"
+        },
+        {
+          "message": "Assim eu calculo o peso/cubagem e encaminho para o consultor calcular o frete."
+        },
+        {
+          "message": "📲 WhatsApp: https://wa.me/5547997454054"
+        }
+      ]
+    },
+    {
+      "id": "flow_instagram",
+      "trigger_keywords": ["fotos", "portfolio", "imagens", "instagram"],
+      "steps": [
+        {
+          "message": "Claro! 😄 Você pode ver nossos projetos e estruturas no Instagram oficial:"
+        },
+        {
+          "message": "📸 https://www.instagram.com/arteshowestrutura"
+        }
+      ]
+    },
+    {
+      "id": "flow_site",
+      "trigger_keywords": ["site", "catálogo", "produtos", "mais informações"],
+      "steps": [
+        {
+          "message": "Você pode acessar nosso site oficial aqui:"
+        },
+        {
+          "message": "🌐 https://arteshowestruturas.com.br"
+        }
+      ]
+    }
+  ]
+}
