@@ -554,6 +554,7 @@ const botResponses: Record<string, { text: string; options?: { label: string; ac
 };
 
 export default function TrelixAssistant() {
+  //const [rotatedSalesTeam, setRotatedSalesTeam] = useState(salesTeam);
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState('');
@@ -1124,3 +1125,12 @@ export default function TrelixAssistant() {
     </>
   );
 }
+
+//function getRotatedSalesTeam(team: typeof salesTeam) {
+//  const lastIndex = Number(localStorage.getItem('lastSalesIndex') || -1);
+//  const nextIndex = (lastIndex + 1) % team.length;
+
+//  localStorage.setItem('lastSalesIndex', String(nextIndex));
+
+ // return [...team.slice(nextIndex), ...team.slice(0, nextIndex)];
+//}

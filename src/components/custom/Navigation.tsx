@@ -18,6 +18,8 @@ export default function Navigation() {
     { name: 'Produtos', href: '#produtos' },
     { name: 'Empresa', href: '#empresa' },
     { name: 'Contato', href: '#contato' },
+    { name: 'FAQ', href: '#faq' },
+    
   ];
 
   const scrollToSection = (href: string) => {

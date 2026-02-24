@@ -8,6 +8,7 @@ import InstagramFeed from './components/custom/InstagramFeed';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import Photos from './sections/Photos';
+import FAQSection from "./components/custom/FAQSection";
 import "./App.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <About />
         <InstagramFeed />
         <Contact />
+        <FAQSection />
       </main>
       <Footer />
       <TrelixAssistant />

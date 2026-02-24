@@ -55,11 +55,9 @@ export default function Hero() {
                 </span>
               </div>
 
-              <h1 className="animate-item text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[0.95] tracking-tight">
-                Estruturas que{' '}
-                <span className="accent-text">seguram</span>{' '}
-                o espetáculo
-              </h1>
+              <h1 className="text-4xl font-bold">
+  Fabricante de Treliças, Palcos e Box Truss em Alumínio para Shows e Eventos
+</h1>
 
               <p className="animate-item text-lg lg:text-xl text-[#A6AAB6] max-w-xl leading-relaxed">
                 Fabricamos treliças, palcos modulares e acessórios em alumínio 
@@ -107,7 +105,7 @@ export default function Hero() {
             <div className="hidden lg:block space-y-6">
               <div className="animate-item card-dark p-6 rounded-lg">
                 <h3 className="text-lg font-semibold mb-3 text-[#F6F7F9]">
-                  Montagem Técnica
+                  Montagem Técnica com agilidade
                 </h3>
                 <p className="text-[#A6AAB6] text-sm leading-relaxed">
                   Engates precisos, perfis de alta carga e manual completo de 
@@ -132,7 +130,7 @@ export default function Hero() {
                 </h3>
                 <p className="text-[#A6AAB6] text-sm leading-relaxed">
                   Sediados em Araquari-SC, atendemos produtoras, DJ's, prefeituras, 
-                  igrejas e empresas de sonorização em todo o território brasileiro.
+                  igrejas e empresas de sonorização e locadoras de estruturas para eventos em todo o território brasileiro.
                 </p>
               </div>
             </div>

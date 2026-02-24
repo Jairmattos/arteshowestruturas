@@ -14,4 +14,10 @@
       "@/*": ["./src/*"]
     }
   }
+  {
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "skipLibCheck": true
+  }
+}
 }
